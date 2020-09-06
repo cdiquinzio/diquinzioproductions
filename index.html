@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>DiQuinzio Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="scripts/jquery-2.1.1.js">
+    </script><!-- Video Descriptions, Titles, Video IDs and Dimensions are all in this section below here -->
+    <script>   
+        $(document).ready(function(){
+            $('#vid1 a').click(function() {
+            $('#video_player').html('<iframe width="860px" height="483.75" src="https://www.youtube.com/embed/dtumsq_XfFI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+            $('#video_description').html('<h1>Libraries Change Lives: John Marsden</h1>Award-winning author, John Marsden, speaks to how #LibrariesChangeLives');
+            });
+
+            $('#vid2 a').click(function() {
+            $('#video_player').html('<iframe width="860px" height="483.75" src="https://www.youtube.com/embed/MiEgJzaTM5s"?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+            $('#video_description').html('<h1>Artist Profile: Donna Racovalis</h1>A profile on local Wyndham arist, Donna Racovalis');
+            });
+
+            $('#vid3 a').click(function() {
+            $('#video_player').html('<iframe width="860px" height="483.75" src="https://www.youtube.com/embed/l8GOowNuD_Y"?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+            $('#video_description').html('<h1>Artist Profile: Amarachi Okorom</h1>A profile on local Wyndham actor, Amarachi Okorom');
+            });
+
+            $('#vid4 a').click(function() {
+            $('#video_player').html('<iframe width="860px" height="483.75" src="https://www.youtube.com/embed/v4BNmeBGTrU"?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+            $('#video_description').html('<h1>AFLW: Daisy Pearce</i></h1>A profile on AFLW star, Daisy Pearce, for Swisse Wellness</i>.');
+            });
+
+            $('#vid5 a').click(function() {
+            $('#video_player').html('<iframe src="https://player.vimeo.com/video/246030922" width="860px" height="483.75" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+            $('#video_description').html('<h1>FACETS - You (Live at 170 Russel)</h1>Indie rock band, Facets, play their track, You, live at 170 Russel in Melbourne</i>. ');
+            });
+
+            $('#vid6 a').click(function() {
+            $('#video_player').html('<iframe src="https://player.vimeo.com/video/246030354" width="860px" height="483.75" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+            $('#video_description').html('<h1>Carl DiQuinzio - 2017</h1>A short reel of videos edited by Carl DiQuinzio');
+            });
+        });
+
+    </script>
+
+   <script>
+        $(document).ready(function(){
+            $('#video_grid a').click(function(){
+                $('html, body').animate({
+                scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+  </head>
+
+  <body>
+
+    <header>
+        <a href="index.html"><img src="images/DP_Website_Header.png"alt="DiQuinzio Productions" width="860" height="330"></a>
+        <div id="playtop"><a name="playtop"></a></div>
+    </header>
+
+    <nav>
+
+      <div id="aboutbutton"><a href="about.html">ABOUT</a></div>
+      <div id="contactbutton"><a href="contact.html">CONTACT</a></div>
+    </nav>
+
+
+    <main>
+    <div class="padder"></div>
+    <div id="video_top">
+    	<div id="video_player">
+			<iframe width="860px" height="483.75" src="https://www.youtube.com/embed/dtumsq_XfFI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div id="video_description"> <!-- Default video description below here -->
+			<h1>Libraries Change Lives: John Marsden</h1>
+            Award-winning author, John Marsden, speaks to how #LibrariesChangeLives.
+		</div>
+    </div>
+    <div class="padder"></div>
+
+    <div id="video_grid">
+    	<div class="video_tile"><div id="vid1">
+    		<div class="video_tile_thumbnail"><a href="#playtop"><img src="images/VideoThumb_DaisyPearce.jpg" alt="description" width="385" height="216.5"></a></div>
+    		<div class="video_tile_title"><a href="#playtop">Libraries Change Lives: John Marsden</a></div>
+    		<div class="video_tile_description">Producer and Editor</div>
+    		<div class="video_tile_length">01:58</div>
+    	</div></div>
+
+    	<div class="video_tile"><div id="vid2">
+    		<div class="video_tile_thumbnail"><a href="#playtop"><img src="images/VideoThumb_Ace.jpg" alt="description" width="385" height="216.5"></a></div>
+    		<div class="video_tile_title"><a href="#playtop">Artist Profile: Donna Racovalis</a></div>
+    		<div class="video_tile_description">Producer and Editor</div>
+    		<div class="video_tile_length">02:35</div>
+    	</div></div>
+
+    	<div class="video_tile"><div id="vid3">
+    		<div class="video_tile_thumbnail"><a href="#playtop"><img src="images/VideoThumb_SwisseKids.jpg" alt="description" width="385" height="216.5"></a></div>
+    		<div class="video_tile_title"><a href="#playtop">Artist Profile: Amarachi Okorom</a></div>
+    		<div class="video_tile_description">Producer and Editor</div>
+    		<div class="video_tile_length">01:29</div>
+    	</div></div>
+
+    	<div class="video_tile"><div id="vid4">
+    		<div class="video_tile_thumbnail"><a href="#playtop"><img src="images/VideoThumb_DaisyPearce.jpg" alt="description" width="385" height="216.5"></a></div>
+    		<div class="video_tile_title"><a href="#playtop">AFLW: Daisy Pearce</a></div>
+    		<div class="video_tile_description">Editor</div>
+    		<div class="video_tile_length">01:36</div>
+    	</div></div>
+
+    </div>
+
+    <div class="padder"></div>
+
+    <div id="getincontact">
+    	<div id="getincontact_text">
+    		Explore more videos produced for <a href="https://www.youtube.com/channel/UC2bXoA4gD7sk_57-Q_ZXLHg">Wyndham City Libraries:</a> 
+    	</div>
+    	<div id="companylogostop">
+    		<div class="companylogosmall"><img src="images/CompanyLogo_Deakin.png" alt="logo" height="150" width="160"></div>
+    		<div class="companylogosmall"><img src="images/CompanyLogo_SBS.png" alt="logo" height="150" width="160"></div>
+    		<div class="companylogosmall"><img src="images/CompanyLogo_NITV.png" alt="logo" height="150" width="160"></div>
+    		<div class="companylogosmall"><img src="images/CompanyLogo_C31.png" alt="logo" height="150" width="160"></div>
+    	
+    	</div></div>
+
+    <div class="padder"></div>
+    </main>
+
+	<footer>
+
+    <div id="copyright">Copyright &#169; Carl DiQuinzio, 2020</div>
+    <div id="credit">Website by Sean Pentland / Logo by Matt Zielinski</div>
+
+    </footer>
+
+  </body>
+
+</html>
